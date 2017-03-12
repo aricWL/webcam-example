@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
@@ -8,7 +8,10 @@ def index():
 
 @app.route('/video', methods=["POST"])
 def video():
-  from IPython import embed; embed()
+  filename = request.form['fname']
+  file = request.files['data']
+  file.save('./' + filename)
+  return jsonify({"message": "complete!"})
 
 if __name__ == "__main__":
   app.run(port=3000, debug=True)

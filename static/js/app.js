@@ -46,9 +46,4 @@ player.on('finishRecord', function() {
         console.log(data);
     });
 
-    axios.post('/video', {
-        data: player.recordedData
-    });
-    // player.recorder.saveAs({'video': 'my-video-file-name'});
-    // debugger
 });
