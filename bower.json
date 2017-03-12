@@ -1,0 +1,21 @@
+{
+  "name": "webcam-example",
+  "authors": [
+    "Matt Lane <lane.matthew@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "videojs-record": "^1.6.0",
+    "forge": "^0.7.0"
+  }
+}
